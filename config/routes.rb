@@ -20,4 +20,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :users do
+    resource :address
+  end
+
 end
